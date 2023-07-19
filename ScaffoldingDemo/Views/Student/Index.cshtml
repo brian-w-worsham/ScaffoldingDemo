@@ -1,0 +1,14 @@
+﻿@model StudentViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using(Html.BeginForm())
+{
+    @Html.EditorForModel("StudentViewModel")
+
+    <input type="submit" value="save"/>
+}
